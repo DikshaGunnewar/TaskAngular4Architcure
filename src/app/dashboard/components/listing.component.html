@@ -1,0 +1,32 @@
+<main>
+  <h5>Dashboard</h5>
+  <hr/>
+  <table class="table table-hover">
+    <thead>
+      <tr class="table-primary">
+        <td>#</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email</td>
+        <td>Phone</td>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td scope="row">{{customer.id}}</td>
+        <td>{{customer.firstName}}</td>
+        <td>{{customer.lastName}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.phone}}</td>
+        <td>
+          <a (click)="editCustomer(customer.id)">Edit</a> |
+          <a (click)="deleteCustomer(customer.id)">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="float-right">
+    <pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm" [boundaryLinks]="true"></pagination>
+  </div>
+</main>

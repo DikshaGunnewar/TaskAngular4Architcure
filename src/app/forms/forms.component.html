@@ -1,0 +1,14 @@
+<!--Redirect To-->
+<h3 class="btn btn-primary pull-right" (click)="show=!show">{{show?'Reactive form':'Template-form'}}</h3>
+<br>
+<div  *ngIf="show; then thenBlock; else elseBlock">forms</div>
+<ng-template #thenBlock>
+    <template-form></template-form>
+</ng-template>
+<ng-template #elseBlock>
+    <reactive-form></reactive-form>
+</ng-template>
+
+
+
+<!--<router-outlet></router-outlet>-->

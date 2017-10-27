@@ -1,0 +1,35 @@
+<!--<main>
+        <h6 style="display:inline">Reactive Form</h6>
+        <button style="float:right" class="btn btn-link" (click)="gotoTemplateForm()">Template Form</button>
+        <hr/>
+</main>-->
+<br>
+<h4>Reactive Form</h4>
+<hr>
+<div class>
+        <form [formGroup]="reactiveForm"  (ngSubmit)="submitForm(reactiveForm.value,reactiveForm.valid)"method="POST">
+                <div class="container">
+                        <div class="form-group">
+                                <label for="firstName">FirstName</label>
+                                <input type="text" id="firstName" name="firstName" formControlName="firstName" class="form-control ng" />
+                                <span *ngIf="firstName.errors && firstName.touched && firstName.errors.required" class="color">first name please</span>
+                        </div>
+                        <div class="form-group">
+                                <label for="lastName">LastName</label>
+                                <input type="text" id="lastName" name="lastName" formControlName="lastName" class="form-control ng" />
+                                <span *ngIf="lastName.errors && lastName.touched  && lastName.errors.required" class="color">last name please</span>
+                        </div>
+                        <div class="form-group">
+                                <label for="email">  Email  </label>
+                                <input type="text" id="email" name="email" formControlName="email" class="form-control ng" />
+                                <span *ngIf="email.errors && email.touched && email.errors.required" class="color">Email please</span>
+                        </div>
+                        <div class="form-group">
+                                <label for="phone">  Phone  </label>
+                                <input type="number" id="phone" name="phone" formControlName="phone" class="form-control ng" />
+                                <span *ngIf="phone.errors && phone.touched && phone.errors.required" class="color">Phone please</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+        </form>
+</div>

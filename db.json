@@ -1,0 +1,126 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "Alex",
+      "lastName": "Doe",
+      "email": "alex@email.com",
+      "phone": "1234567899"
+    },
+    {
+      "id": 2,
+      "firstName": "Jim",
+      "lastName": "Copper",
+      "email": "jim@email.com",
+      "phone": "9898989765"
+    },
+    {
+      "id": 3,
+      "firstName": "Andrew",
+      "lastName": "Flintoff",
+      "email": "andrew@email.com",
+      "phone": "1231231235"
+    },
+    {
+      "id": 4,
+      "firstName": "Sandye",
+      "lastName": "Libbie",
+      "email": "slibbie3@cloudflare.com",
+      "phone": "9076763149"
+    },
+    {
+      "id": 5,
+      "firstName": "Floris",
+      "lastName": "Trymme",
+      "email": "ftrymme4@redcross.org",
+      "phone": "7128433114"
+    },
+    {
+      "firstName": "diksha",
+      "lastName": "gunnewar",
+      "id": 6
+    },
+    {
+      "firstName": "frvgrd",
+      "lastName": "fsdf",
+      "email": "diksha@gmail.com",
+      "phone": "345464354",
+      "id": 7
+    },
+    {
+      "firstName": "lata",
+      "lastName": "Bisht",
+      "email": "lata@gmail.com",
+      "phone": "8528521369",
+      "id": 8
+    },
+    {
+      "firstName": "Praveen",
+      "lastName": "Bhatt",
+      "email": "praveen@gmail.com",
+      "phone": "852852852",
+      "id": 9
+    },
+    {
+      "firstName": "suraj",
+      "lastName": "mandal",
+      "email": "suru@mail.com",
+      "phone": 8557257852,
+      "id": 10
+    }
+  ],
+  "country": [
+    {
+      "cId": 1,
+      "cName": "Australia",
+      "cCode": "AU"
+    },
+    {
+      "cId": 2,
+      "cName": "India",
+      "cCode": "IN"
+    },
+    {
+      "cId": 3,
+      "cName": "United States",
+      "cCode": "US"
+    }
+  ],
+  "state": [
+    {
+      "sId": 1,
+      "sName": "Utter Pradesh",
+      "cId": 2
+    },
+    {
+      "sId": 2,
+      "sName": "Madhya Pradesh",
+      "cId": 2
+    },
+    {
+      "sId": 3,
+      "sName": "California",
+      "cId": 3
+    },
+    {
+      "sId": 4,
+      "sName": "Alabama",
+      "cId": 3
+    },
+    {
+      "sId": 5,
+      "sName": "Alaska",
+      "cId": 3
+    },
+    {
+      "sId": 6,
+      "sName": "South Australia",
+      "cId": 1
+    },
+    {
+      "sId": 7,
+      "sName": "Western Australia",
+      "cId": 1
+    }
+  ]
+}

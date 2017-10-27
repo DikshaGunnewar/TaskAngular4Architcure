@@ -1,0 +1,33 @@
+.h1, h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #9b5ecf;
+    font-family: monospace;
+}
+.size{
+      margin-left: 375px;
+}
+
+.color{
+    color:red;
+}
+.form-control.ng-touched.ng-invalid{
+ border:1px solid red
+}
+
+/*.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; green 
+}*/
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+      background-color: #FFEBD6;
+
+}
+.ng{
+  width: 50%;
+}
+input[type="text"].ng-valid, input[type="email"].ng-valid, input[type="password"].ng-valid, input[type="date"].ng-valid, input[type="number"].ng-valid, input[type="file"].ng-valid, textarea.ng-valid, select.ng-valid {
+    background-color: #FFFFFF;
+    border-left: 5px solid #088b0b;
+}
